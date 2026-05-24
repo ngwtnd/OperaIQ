@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OperaIQ.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6df85db9a7feadccd15bc99102ac0a755287024")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50ccc6d1611fa91f1bfb0f44bafc42be4f399862")]
 [assembly: System.Reflection.AssemblyProductAttribute("OperaIQ.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OperaIQ.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

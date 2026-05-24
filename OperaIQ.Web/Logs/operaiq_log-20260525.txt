@@ -1127,3 +1127,265 @@ FROM [Tenants] AS [t]
 2026-05-25 01:26:00.928 +07:00 [INF] Server ngocdieu:11632:5caf82dc All dispatchers stopped
 2026-05-25 01:26:00.941 +07:00 [INF] Server ngocdieu:11632:5caf82dc successfully reported itself as stopped in 7,0496 ms
 2026-05-25 01:26:00.945 +07:00 [INF] Server ngocdieu:11632:5caf82dc has been stopped in total 430,733 ms
+2026-05-25 01:33:36.948 +07:00 [INF] Start installing Hangfire SQL objects...
+2026-05-25 01:33:37.542 +07:00 [INF] Hangfire SQL objects installed.
+2026-05-25 01:33:37.795 +07:00 [INF] User profile is available. Using 'C:\Users\Ngoc Dieu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-25 01:33:38.376 +07:00 [WRN] Entity 'AppUser' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-25 01:33:38.693 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-25 01:33:38.702 +07:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-05-25 01:33:38.728 +07:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-05-25 01:33:38.851 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-05-25 01:33:38.869 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-25 01:33:38.871 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-25 01:33:38.881 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-25 01:33:38.892 +07:00 [INF] No migrations were applied. The database is already up to date.
+2026-05-25 01:33:38.898 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-05-25 01:33:39.177 +07:00 [INF] Executed DbCommand (17ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:33:39.241 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:33:39.242 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:33:39.245 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:33:39.305 +07:00 [INF] Executed DbCommand (13ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[DepartmentId], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsDeleted], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TenantId], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[NormalizedEmail] = @normalizedEmail
+2026-05-25 01:33:39.423 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tenants] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-05-25 01:33:39.532 +07:00 [INF] Now listening on: http://localhost:5074
+2026-05-25 01:33:39.539 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: ngocdieu@OperaIQDb'
+2026-05-25 01:33:39.539 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-05-25 01:33:39.539 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-05-25 01:33:39.550 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 01:33:39.550 +07:00 [INF] Hosting environment: Development
+2026-05-25 01:33:39.550 +07:00 [INF] Content root path: d:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web
+2026-05-25 01:33:39.637 +07:00 [INF] Server ngocdieu:25948:140461cd successfully announced in 87,8574 ms
+2026-05-25 01:33:39.640 +07:00 [INF] Server ngocdieu:25948:140461cd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-05-25 01:33:39.647 +07:00 [INF] Server ngocdieu:25948:140461cd all the dispatchers started
+2026-05-25 01:36:22.830 +07:00 [INF] Start installing Hangfire SQL objects...
+2026-05-25 01:36:23.638 +07:00 [INF] Hangfire SQL objects installed.
+2026-05-25 01:36:23.868 +07:00 [INF] User profile is available. Using 'C:\Users\Ngoc Dieu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-25 01:36:24.415 +07:00 [WRN] Entity 'AppUser' has a global query filter defined and is the required end of a relationship with the entity 'UserRole'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-25 01:36:24.779 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-25 01:36:24.790 +07:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-05-25 01:36:24.810 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-05-25 01:36:24.878 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-05-25 01:36:24.909 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-25 01:36:24.920 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-25 01:36:24.952 +07:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-25 01:36:24.983 +07:00 [INF] No migrations were applied. The database is already up to date.
+2026-05-25 01:36:24.996 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-05-25 01:36:25.292 +07:00 [INF] Executed DbCommand (16ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:36:25.354 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:36:25.359 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:36:25.363 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:36:25.399 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[DepartmentId], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsDeleted], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TenantId], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[NormalizedEmail] = @normalizedEmail
+2026-05-25 01:36:25.489 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tenants] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-05-25 01:36:25.629 +07:00 [INF] Now listening on: http://localhost:5074
+2026-05-25 01:36:25.637 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: ngocdieu@OperaIQDb'
+2026-05-25 01:36:25.639 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-05-25 01:36:25.640 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-05-25 01:36:25.670 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 01:36:25.674 +07:00 [INF] Hosting environment: Development
+2026-05-25 01:36:25.677 +07:00 [INF] Content root path: D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web
+2026-05-25 01:36:25.787 +07:00 [INF] Server ngocdieu:29936:faa73450 successfully announced in 116,8799 ms
+2026-05-25 01:36:25.790 +07:00 [INF] Server ngocdieu:29936:faa73450 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, SqlServerHeartbeatProcess, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-05-25 01:36:25.797 +07:00 [INF] Server ngocdieu:29936:faa73450 all the dispatchers started
+2026-05-25 01:36:36.482 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5074/ - null null
+2026-05-25 01:36:36.486 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-05-25 01:36:36.544 +07:00 [INF] Executing endpoint 'OperaIQ.Web.Controllers.DashboardController.Index (OperaIQ.Web)'
+2026-05-25 01:36:36.567 +07:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OperaIQ.Web.Controllers.DashboardController (OperaIQ.Web).
+2026-05-25 01:36:36.701 +07:00 [INF] Executing RedirectResult, redirecting to /Account/Login.
+2026-05-25 01:36:36.714 +07:00 [INF] Executed action OperaIQ.Web.Controllers.DashboardController.Index (OperaIQ.Web) in 136.162ms
+2026-05-25 01:36:36.717 +07:00 [INF] Executed endpoint 'OperaIQ.Web.Controllers.DashboardController.Index (OperaIQ.Web)'
+2026-05-25 01:36:36.734 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5074/ - 302 0 null 252.3193ms
+2026-05-25 01:36:36.746 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5074/Account/Login - null null
+2026-05-25 01:36:36.786 +07:00 [INF] Executing endpoint 'OperaIQ.Web.Controllers.AccountController.Login (OperaIQ.Web)'
+2026-05-25 01:36:36.812 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String) on controller OperaIQ.Web.Controllers.AccountController (OperaIQ.Web).
+2026-05-25 01:36:36.909 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[DeletedAt], [t].[IsDeleted], [t].[LogoUrl], [t].[Name], [t].[Slug], [t].[Status], [t].[SubscriptionExpiry], [t].[UpdatedAt]
+FROM [Tenants] AS [t]
+2026-05-25 01:36:37.027 +07:00 [INF] Executing ViewResult, running view Login.
+2026-05-25 01:36:37.112 +07:00 [INF] Executed ViewResult - view Login executed in 90.215ms.
+2026-05-25 01:36:37.114 +07:00 [INF] Executed action OperaIQ.Web.Controllers.AccountController.Login (OperaIQ.Web) in 299.9394ms
+2026-05-25 01:36:37.115 +07:00 [INF] Executed endpoint 'OperaIQ.Web.Controllers.AccountController.Login (OperaIQ.Web)'
+2026-05-25 01:36:37.119 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5074/Account/Login - 200 null text/html; charset=utf-8 372.8598ms
+2026-05-25 01:38:43.031 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5074/Account/Login - application/x-www-form-urlencoded 322
+2026-05-25 01:38:43.176 +07:00 [INF] Executing endpoint 'OperaIQ.Web.Controllers.AccountController.Login (OperaIQ.Web)'
+2026-05-25 01:38:43.302 +07:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OperaIQ.Application.DTOs.LoginDto, System.Nullable`1[System.Guid], System.String) on controller OperaIQ.Web.Controllers.AccountController (OperaIQ.Web).
+2026-05-25 01:38:43.361 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[DeletedAt], [t].[IsDeleted], [t].[LogoUrl], [t].[Name], [t].[Slug], [t].[Status], [t].[SubscriptionExpiry], [t].[UpdatedAt]
+FROM [Tenants] AS [t]
+2026-05-25 01:38:43.372 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[DepartmentId], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsDeleted], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TenantId], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[NormalizedEmail] = @normalizedEmail
+2026-05-25 01:38:43.409 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedRoleName
+2026-05-25 01:38:43.512 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@p='?' (DbType = Guid), @p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[RoleId]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserId] = @p AND [u].[RoleId] = @p0
+2026-05-25 01:38:43.837 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[DepartmentId], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[IsDeleted], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TenantId], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) AND [u].[NormalizedUserName] = @normalizedUserName
+2026-05-25 01:38:44.168 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@user_Id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[ClaimType], [u].[ClaimValue], [u].[UserId]
+FROM [UserClaims] AS [u]
+WHERE [u].[UserId] = @user_Id
+2026-05-25 01:38:44.291 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @userId
+2026-05-25 01:38:44.327 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-25 01:38:44.375 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@role_Id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[ClaimType], [r].[ClaimValue]
+FROM [RoleClaims] AS [r]
+WHERE [r].[RoleId] = @role_Id
+2026-05-25 01:38:44.420 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-05-25 01:38:44.434 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@user_Id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[ClaimType], [u].[ClaimValue], [u].[UserId]
+FROM [UserClaims] AS [u]
+WHERE [u].[UserId] = @user_Id
+2026-05-25 01:38:44.446 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@userId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @userId
+2026-05-25 01:38:44.453 +07:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-05-25 01:38:44.459 +07:00 [INF] Executing RedirectResult, redirecting to /.
+2026-05-25 01:38:44.461 +07:00 [INF] Executed action OperaIQ.Web.Controllers.AccountController.Login (OperaIQ.Web) in 1154.2506ms
+2026-05-25 01:38:44.465 +07:00 [INF] Executed endpoint 'OperaIQ.Web.Controllers.AccountController.Login (OperaIQ.Web)'
+2026-05-25 01:38:44.469 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5074/Account/Login - 302 0 null 1437.6918ms
+2026-05-25 01:38:44.477 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5074/ - null null
+2026-05-25 01:38:44.487 +07:00 [INF] Executing endpoint 'OperaIQ.Web.Controllers.DashboardController.Index (OperaIQ.Web)'
+2026-05-25 01:38:44.489 +07:00 [INF] Route matched with {action = "Index", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OperaIQ.Web.Controllers.DashboardController (OperaIQ.Web).
+2026-05-25 01:38:44.499 +07:00 [INF] Executing RedirectResult, redirecting to /SuperAdmin/ManageTenants.
+2026-05-25 01:38:44.501 +07:00 [INF] Executed action OperaIQ.Web.Controllers.DashboardController.Index (OperaIQ.Web) in 8.6783ms
+2026-05-25 01:38:44.504 +07:00 [INF] Executed endpoint 'OperaIQ.Web.Controllers.DashboardController.Index (OperaIQ.Web)'
+2026-05-25 01:38:44.508 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5074/ - 302 0 null 30.6273ms
+2026-05-25 01:38:44.515 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5074/SuperAdmin/ManageTenants - null null
+2026-05-25 01:38:44.526 +07:00 [INF] Executing endpoint 'OperaIQ.Web.Controllers.SuperAdminController.ManageTenants (OperaIQ.Web)'
+2026-05-25 01:38:44.539 +07:00 [INF] Route matched with {action = "ManageTenants", controller = "SuperAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ManageTenants() on controller OperaIQ.Web.Controllers.SuperAdminController (OperaIQ.Web).
+2026-05-25 01:38:44.549 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[DeletedAt], [t].[IsDeleted], [t].[LogoUrl], [t].[Name], [t].[Slug], [t].[Status], [t].[SubscriptionExpiry], [t].[UpdatedAt]
+FROM [Tenants] AS [t]
+2026-05-25 01:38:44.555 +07:00 [INF] Executing ViewResult, running view ManageTenants.
+2026-05-25 01:38:44.559 +07:00 [ERR] The view 'ManageTenants' was not found. Searched locations: ["/Views/SuperAdmin/ManageTenants.cshtml","/Views/Shared/ManageTenants.cshtml"]
+2026-05-25 01:38:44.569 +07:00 [INF] Executed action OperaIQ.Web.Controllers.SuperAdminController.ManageTenants (OperaIQ.Web) in 25.8307ms
+2026-05-25 01:38:44.572 +07:00 [INF] Executed endpoint 'OperaIQ.Web.Controllers.SuperAdminController.ManageTenants (OperaIQ.Web)'
+2026-05-25 01:38:44.575 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'ManageTenants' was not found. The following locations were searched:
+/Views/SuperAdmin/ManageTenants.cshtml
+/Views/Shared/ManageTenants.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OperaIQ.Web.Middlewares.TenantResolutionMiddleware.InvokeAsync(HttpContext context, ITenantService tenantService, ApplicationDbContext dbContext) in D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web\Middlewares\TenantResolutionMiddleware.cs:line 94
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-25 01:38:44.721 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5074/SuperAdmin/ManageTenants - 500 null text/html; charset=utf-8 205.786ms

@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Logging;
 using OperaIQ.Application.Common;
 using OperaIQ.Application.Mappings;
 using OperaIQ.Application.Services;
@@ -166,6 +167,9 @@ app.UseHangfireDashboard("/hangfire");
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Dashboard}/{action=Index}/{id?}");
+
+// Map SignalR Hub
+app.MapHub<NotificationHub>("/notificationHub");
 
 // Seed Dữ liệu Hệ thống
 using (var scope = app.Services.CreateScope())
