@@ -10,3 +10,4 @@ D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Doma
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\refint\OperaIQ.Domain.dll
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.pdb
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\ref\OperaIQ.Domain.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.sourcelink.json

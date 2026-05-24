@@ -63,7 +63,7 @@ namespace OperaIQ.Infrastructure.Data
                     Id = Guid.NewGuid(),
                     Name = "Công ty Cổ phần Công nghệ OperaIQ",
                     Slug = "operaiq",
-                    IsActive = true
+                    Status = TenantStatus.Active
                 };
 
                 var tenant2 = new Tenant
@@ -71,7 +71,7 @@ namespace OperaIQ.Infrastructure.Data
                     Id = Guid.NewGuid(),
                     Name = "Tập đoàn Bán lẻ VinGroup",
                     Slug = "vingroup",
-                    IsActive = true
+                    Status = TenantStatus.Active
                 };
 
                 await context.Tenants.AddRangeAsync(tenant1, tenant2);

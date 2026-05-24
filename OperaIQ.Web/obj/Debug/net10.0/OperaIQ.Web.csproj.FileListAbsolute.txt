@@ -314,3 +314,4 @@ D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web\obj\Debug\net10.0\refint\OperaIQ.
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web\obj\Debug\net10.0\OperaIQ.Web.pdb
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web\obj\Debug\net10.0\OperaIQ.Web.genruntimeconfig.cache
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web\obj\Debug\net10.0\ref\OperaIQ.Web.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Web\obj\Debug\net10.0\OperaIQ.Web.sourcelink.json

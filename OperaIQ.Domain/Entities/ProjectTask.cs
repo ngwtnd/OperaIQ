@@ -1,7 +1,7 @@
 using System;
 using OperaIQ.Domain.Common;
 using OperaIQ.Domain.Enums;
-using TaskStatus = OperaIQ.Domain.Enums.TaskStatus;
+// using TaskStatus = OperaIQ.Domain.Enums.TaskStatus;
 
 namespace OperaIQ.Domain.Entities
 {
@@ -10,7 +10,8 @@ namespace OperaIQ.Domain.Entities
         public Guid ProjectId { get; set; }
         public string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
-        public TaskStatus Status { get; set; } = TaskStatus.Todo;
+        public OperaIQ.Domain.Enums.TaskStatus Status { get; set; }
+    = OperaIQ.Domain.Enums.TaskStatus.Todo;
         public TaskPriority Priority { get; set; } = TaskPriority.Medium;
         public Guid? AssignedToId { get; set; }
         public DateTime? DueDate { get; set; }

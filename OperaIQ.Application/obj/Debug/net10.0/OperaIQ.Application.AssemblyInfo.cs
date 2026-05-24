@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OperaIQ.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6df85db9a7feadccd15bc99102ac0a755287024")]
 [assembly: System.Reflection.AssemblyProductAttribute("OperaIQ.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OperaIQ.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

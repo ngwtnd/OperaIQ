@@ -4555,11 +4555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
+      "projectUniqueName": "D:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
       "projectName": "OperaIQ.Web",
-      "projectPath": "d:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
+      "projectPath": "D:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
       "packagesPath": "C:\\Users\\Ngoc Dieu\\.nuget\\packages\\",
-      "outputPath": "d:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\obj\\",
+      "outputPath": "D:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

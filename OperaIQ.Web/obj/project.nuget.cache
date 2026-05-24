@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s/sJZzArfVU=",
+  "dgSpecHash": "kxWxoRW8I9E=",
   "success": true,
-  "projectFilePath": "d:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
+  "projectFilePath": "D:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ngoc Dieu\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Ngoc Dieu\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -81,9 +81,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "d:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
+      "projectPath": "D:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
       "warningLevel": 1,
-      "filePath": "d:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
+      "filePath": "D:\\_Tốt nghiệp\\OperaIQ\\OperaIQ\\OperaIQ.Web\\OperaIQ.Web.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net10.0"

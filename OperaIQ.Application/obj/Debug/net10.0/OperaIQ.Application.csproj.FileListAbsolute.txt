@@ -13,3 +13,4 @@ D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\refint\OperaIQ.Application.dll
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.pdb
 D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\ref\OperaIQ.Application.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.sourcelink.json
