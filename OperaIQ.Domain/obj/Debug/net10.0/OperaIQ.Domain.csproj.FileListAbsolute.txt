@@ -1,0 +1,12 @@
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\bin\Debug\net10.0\OperaIQ.Domain.deps.json
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\bin\Debug\net10.0\OperaIQ.Domain.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\bin\Debug\net10.0\OperaIQ.Domain.pdb
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.csproj.AssemblyReference.cache
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.AssemblyInfoInputs.cache
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.AssemblyInfo.cs
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.csproj.CoreCompileInputs.cache
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\refint\OperaIQ.Domain.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\OperaIQ.Domain.pdb
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Domain\obj\Debug\net10.0\ref\OperaIQ.Domain.dll

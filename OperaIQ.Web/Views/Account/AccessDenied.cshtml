@@ -1,0 +1,9 @@
+@{ ViewData["Title"] = "Không có quyền truy cập"; }
+<div class="text-center py-5">
+    <i class="bi bi-shield-lock" style="font-size: 5rem; color: #e94560;"></i>
+    <h2 class="mt-3">Truy cập bị từ chối</h2>
+    <p class="text-muted">Bạn không có quyền truy cập trang này. Vui lòng liên hệ quản trị viên.</p>
+    <a asp-controller="Dashboard" asp-action="Index" class="btn btn-outline-primary mt-3">
+        <i class="bi bi-house me-1"></i>Quay về Dashboard
+    </a>
+</div>

@@ -1,0 +1,15 @@
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.csproj.AssemblyReference.cache
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.AssemblyInfoInputs.cache
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.AssemblyInfo.cs
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.csproj.CoreCompileInputs.cache
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\bin\Debug\net10.0\OperaIQ.Application.deps.json
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\bin\Debug\net10.0\OperaIQ.Application.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\bin\Debug\net10.0\OperaIQ.Application.pdb
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\bin\Debug\net10.0\OperaIQ.Domain.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\bin\Debug\net10.0\OperaIQ.Domain.pdb
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ..3090281F.Up2Date
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\refint\OperaIQ.Application.dll
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\OperaIQ.Application.pdb
+D:\_Tốt nghiệp\OperaIQ\OperaIQ\OperaIQ.Application\obj\Debug\net10.0\ref\OperaIQ.Application.dll

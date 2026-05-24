@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="OperaIQ.Application/OperaIQ.Application.csproj" />
+  <Project Path="OperaIQ.Domain/OperaIQ.Domain.csproj" />
+  <Project Path="OperaIQ.Infrastructure/OperaIQ.Infrastructure.csproj" />
+  <Project Path="OperaIQ.Web/OperaIQ.Web.csproj" />
+</Solution>

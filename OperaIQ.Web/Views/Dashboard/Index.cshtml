@@ -1,0 +1,79 @@
+@model IEnumerable<ProjectTask>
+@{ ViewData["Title"] = "Dashboard"; }
+
+<div class="row g-4 mb-4">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px;">
+            <div class="card-body text-white p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div><h6 class="mb-1 opacity-75">Dự án</h6><h2 class="fw-bold mb-0">@ViewBag.ProjectCount</h2></div>
+                    <i class="bi bi-kanban" style="font-size: 2.5rem; opacity: 0.5;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 16px;">
+            <div class="card-body text-white p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div><h6 class="mb-1 opacity-75">Công việc của tôi</h6><h2 class="fw-bold mb-0">@ViewBag.TaskCount</h2></div>
+                    <i class="bi bi-list-task" style="font-size: 2.5rem; opacity: 0.5;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 16px;">
+            <div class="card-body text-white p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div><h6 class="mb-1 opacity-75">Hoàn thành</h6><h2 class="fw-bold mb-0">@ViewBag.CompletedTaskCount</h2></div>
+                    <i class="bi bi-check-circle" style="font-size: 2.5rem; opacity: 0.5;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); border-radius: 16px;">
+            <div class="card-body text-white p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div><h6 class="mb-1 opacity-75">Tài liệu</h6><h2 class="fw-bold mb-0">@ViewBag.DocumentCount</h2></div>
+                    <i class="bi bi-file-earmark-text" style="font-size: 2.5rem; opacity: 0.5;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 shadow-sm" style="border-radius: 16px;">
+    <div class="card-header bg-white border-0 pt-4 px-4">
+        <h5 class="fw-bold"><i class="bi bi-clock-history me-2 text-primary"></i>Công việc gần đây</h5>
+    </div>
+    <div class="card-body px-4">
+        @if (Model != null && Model.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr><th>Tiêu đề</th><th>Dự án</th><th>Người thực hiện</th><th>Trạng thái</th><th>Độ ưu tiên</th></tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var task in Model)
+                    {
+                        <tr>
+                            <td class="fw-semibold">@task.Title</td>
+                            <td>@task.Project?.Name</td>
+                            <td>@(task.AssignedTo?.FullName ?? "Chưa gán")</td>
+                            <td><span class="badge bg-info">@task.Status</span></td>
+                            <td><span class="badge bg-warning text-dark">@task.Priority</span></td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <p class="text-muted text-center py-4"><i class="bi bi-inbox me-1"></i>Chưa có công việc nào.</p>
+        }
+    </div>
+</div>
